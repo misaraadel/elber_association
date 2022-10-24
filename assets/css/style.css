@@ -979,6 +979,22 @@ ul {
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
+@-webkit-keyframes patternMove {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes patternMove {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
 :root {
   --primary-color: #2C608C;
   --secondary-color: #dfbe5d;
@@ -1270,7 +1286,7 @@ ul {
   box-shadow: 0px 0px 10px rgba(44, 96, 140, 0.2);
 }
 .navbar.scrolled .brand-name img {
-  height: 50px !important;
+  height: 80px !important;
 }
 .navbar.scrolled .top-nav {
   display: none;
@@ -1348,7 +1364,7 @@ ul {
 }
 .navbar .content .brand-name img {
   width: 120px;
-  height: 70px;
+  height: 90px;
   -o-object-fit: contain;
      object-fit: contain;
   transition: all 0.3s linear;
@@ -1435,10 +1451,11 @@ ul {
   position: absolute;
   width: 16px;
   height: 16px;
-  background: url("../images/navbar/arrow-square-right.svg") center/contain no-repeat;
+  background: url("../images/check.svg") center/contain no-repeat;
   top: calc(50% - 10px);
   right: 0px;
   z-index: -1;
+  filter: var(--primary-filter);
   transition: all 0.3s linear;
 }
 .navbar .content .navbar-nav .nav-item.nav-drop .drop-list li a:hover {
@@ -1480,7 +1497,8 @@ header::after {
   position: absolute;
   width: 45%;
   height: 110%;
-  background-color: #D9E7DB;
+  background: url("../images/pattern.jpg") center/cover no-repeat;
+  opacity: 0.3;
   top: 0;
   left: 0;
   border-bottom-right-radius: 40px;
@@ -2020,7 +2038,7 @@ header .image-content .data p {
   position: absolute;
   width: 30%;
   height: 100%;
-  background: url("../images/logo.png") center/contain no-repeat;
+  background: url("../images/icon.png") top left/contain no-repeat;
   opacity: 0.1;
   -webkit-animation: translateY 2s linear infinite;
           animation: translateY 2s linear infinite;
@@ -3241,9 +3259,26 @@ header .image-content .data p {
 footer {
   width: 100%;
   padding: 50px 0px 10px;
-  background-color: #131313;
   position: relative;
   z-index: 9;
+}
+footer::after, footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+footer::after {
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+footer::before {
+  background: url("../images/pattern.jpg") center/cover repeat-x;
+  z-index: -2;
+  -webkit-animation: patternMove 30s linear infinite;
+          animation: patternMove 30s linear infinite;
 }
 footer.big-footer {
   padding-top: 150px !important;
@@ -3407,19 +3442,23 @@ footer .copyrights p {
   .navbar .hamburger {
     display: block !important;
   }
+  .navbar.scrolled .brand-name img {
+    height: 60px !important;
+  }
   .navbar.scrolled .navbar-nav {
-    top: 90px;
-    height: calc(100vh - 90px);
+    top: 100px;
+    height: 100vh !important;
   }
   .navbar .navbar-nav {
     width: 100%;
-    height: calc(100vh - 123px) !important;
+    height: 100vh !important;
     position: absolute;
-    padding: 20px 15px;
+    padding: 20px 15px 120px 0px;
     background-color: #fff;
     z-index: 99;
     top: 123px;
     right: -100%;
+    overflow-y: scroll;
     flex-direction: column !important;
     justify-content: flex-start;
     align-items: flex-start;
@@ -3442,17 +3481,6 @@ footer .copyrights p {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-  .navbar .navbar-nav::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: url("../images/navbar/icon.png") bottom left/contain no-repeat;
-    opacity: 0.1;
-    z-index: -1;
-    bottom: 100px;
-    left: 20px;
   }
   .navbar .brand-name img {
     -o-object-position: left !important;

@@ -309,7 +309,7 @@
     box-shadow: 0px 0px 10px rgba($color: #2C608C, $alpha: 0.2);
 
     .brand-name img {
-      height: 50px !important;
+      height: 80px !important;
     }
 
     .top-nav {
@@ -403,7 +403,7 @@
 
     .brand-name img {
       width: 120px;
-      height: 70px;
+      height: 90px;
       object-fit: contain;
       transition: all .3s linear;
     }
@@ -492,10 +492,11 @@
                   position: absolute;
                   width: 16px;
                   height: 16px;
-                  background: url('../images/navbar/arrow-square-right.svg') center / contain no-repeat;
+                  background: url('../images/check.svg') center / contain no-repeat;
                   top: calc(50% - 10px);
                   right: 0px;
                   z-index: -1;
+                  filter: var(--primary-filter);
                   transition: all .3s linear;
                 }
 
@@ -553,7 +554,8 @@ header {
     position: absolute;
     width: 45%;
     height: 110%;
-    background-color: #D9E7DB;
+    background: url('../images/pattern.jpg') center / cover no-repeat;
+    opacity: .3;
     top: 0;
     left: 0;
     border-bottom-right-radius: 40px;
@@ -1150,7 +1152,7 @@ header {
       position: absolute;
       width: 30%;
       height: 100%;
-      background: url('../images/logo.png') center / contain no-repeat;
+      background: url('../images/icon.png') top left / contain no-repeat;
       opacity: .1;
       animation: translateY 2s linear infinite;
       z-index: -1;
@@ -2528,9 +2530,28 @@ header {
 footer {
   width: 100%;
   padding: 50px 0px 10px;
-  background-color: #131313;
   position: relative;
   z-index: 9;
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    background-color: rgba($color: #000, $alpha: 0.9);
+    z-index: -1;
+  }
+
+  &::before {
+    background: url('../images/pattern.jpg') center / cover repeat-x;
+    z-index: -2;
+    animation: patternMove 30s linear infinite;
+  }
 
   &.big-footer {
     padding-top: 150px !important; 

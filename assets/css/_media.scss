@@ -5,21 +5,27 @@
     }
 
     &.scrolled {
+
+      .brand-name img {
+        height: 60px !important;
+      }
+
       .navbar-nav {
-        top: 90px;
-        height: calc(100vh - 90px);
+        top: 100px;
+        height: 100vh !important;
       }
     }
 
     .navbar-nav {
       width: 100%;
-      height: calc(100vh - 123px) !important;
+      height: 100vh !important;
       position: absolute;
-      padding: 20px 15px;
+      padding: 20px 15px 120px 0px;
       background-color: #fff;
       z-index: 99;
       top: 123px;
       right: -100%;
+      overflow-y: scroll;
       flex-direction: column !important;
       justify-content: flex-start;
       align-items: flex-start;
@@ -43,18 +49,6 @@
         .nav-link {
           width: fit-content;
         }
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        background: url('../images/navbar/icon.png') bottom left / contain no-repeat;
-        opacity: .1;
-        z-index: -1;
-        bottom: 100px;
-        left: 20px;
       }
     }
 
