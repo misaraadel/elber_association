@@ -1,0 +1,148 @@
+@media (max-width: 999px) {
+  .navbar {
+    .hamburger {
+      display: block !important;
+    }
+
+    &.scrolled {
+      .navbar-nav {
+        top: 90px;
+        height: calc(100vh - 90px);
+      }
+    }
+
+    .navbar-nav {
+      width: 100%;
+      height: calc(100vh - 123px) !important;
+      position: absolute;
+      padding: 20px 15px;
+      background-color: #fff;
+      z-index: 99;
+      top: 123px;
+      right: -100%;
+      flex-direction: column !important;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      transition: all .3s linear;
+
+      &.active-nav {
+        right: 0px;
+      }
+
+      .nav-item {
+        width: 100%;
+        margin: 0px !important;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba($color: #8DC63F, $alpha: 0.3);
+
+        &:last-child {
+          border-bottom: 0px !important;
+        }
+
+        .nav-link {
+          width: fit-content;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: url('../images/navbar/icon.png') bottom left / contain no-repeat;
+        opacity: .1;
+        z-index: -1;
+        bottom: 100px;
+        left: 20px;
+      }
+    }
+
+    .brand-name img {
+      object-position: left !important;
+    }
+  }
+
+  header {
+    padding: 150px 0px 50px;
+  }
+
+  .about-us {
+    padding: 90px 0px 40px;
+
+    &::after {
+      width: 150px;
+      opacity: .2;
+    }
+
+    .box {
+      padding: 20px 5px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+
+  .projects.pattern-shape-left::after {
+    width: 150px;
+    opacity: .2;
+  }
+
+  .projects  {
+    padding: 30px 0px;
+  }
+
+  .padding-contain {
+    padding-inline-start: 0px !important;
+  }
+
+  .newsLetter {
+    padding-top: 0px !important;
+    h1 {
+      font-size: 23px !important;
+    }
+    .contain {
+      padding: 30px 10px;
+    }
+    .form-group {
+      .custom-btn {
+        width: 120px !important;
+      }
+
+      .form-control {
+        padding-inline-end: 120px !important;
+      }
+    }
+  }
+
+  .cart .project-box {
+    flex-direction: column;
+
+    .image-content, .contain {
+      width: 100%;
+    }
+  }
+
+  .bank-data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .content {
+      width: 100% !important;
+      margin-top: 20px;
+
+      li {
+        justify-content: space-between !important;
+
+        span {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
