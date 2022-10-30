@@ -1320,11 +1320,14 @@ ul {
 .navbar .top-nav .custom-btn {
   background-color: var(--primary-color);
   height: 40px;
-  width: 200px;
+  width: 150px;
+}
+.navbar .top-nav .custom-btn span {
+  font-size: 13px;
 }
 .navbar .top-nav .custom-btn img {
-  width: 20px;
-  height: 20px;
+  width: 20px !important;
+  height: 20px !important;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1348,6 +1351,7 @@ ul {
   filter: var(--primary-filter);
 }
 .navbar .content {
+  padding: 10px 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -3341,9 +3345,39 @@ header .image-content .data p {
 
 .partner {
   width: 100%;
-  padding: 50px 0px;
+  padding: 40px 0px;
   position: relative;
   z-index: 9;
+}
+.partner .heading {
+  margin-bottom: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0px !important;
+}
+.partner .heading::before {
+  display: none;
+}
+.partner .heading h1 {
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0px;
+  z-index: 9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.partner .heading h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 7px;
+  left: 0;
+  background-color: #dfbe5d;
+  z-index: 0;
 }
 .partner.primary-project {
   background-color: var(--primary-color);
@@ -3647,19 +3681,29 @@ footer .copyrights p {
 
 @media (max-width: 999px) {
   .navbar {
-    padding: 20px 0px;
+    padding: 0px 0px;
   }
-  .navbar .top-nav {
-    display: none;
+  .navbar .socail-data {
+    display: none !important;
   }
   .navbar .hamburger {
     display: block !important;
+  }
+  .navbar .data-icons {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar .data-icons .custom-btn {
+    height: 35px !important;
+  }
+  .navbar .top-nav {
+    margin-bottom: 0px;
   }
   .navbar.scrolled .brand-name img {
     height: 60px !important;
   }
   .navbar.scrolled .navbar-nav {
-    top: 100px;
+    top: 80px;
     height: 100vh !important;
   }
   .navbar .navbar-nav {
@@ -3669,7 +3713,7 @@ footer .copyrights p {
     padding: 20px 15px 120px 0px;
     background-color: #fff;
     z-index: 99;
-    top: 123px;
+    top: 170px;
     right: -100%;
     overflow-y: scroll;
     flex-direction: column !important;
@@ -3700,10 +3744,19 @@ footer .copyrights p {
        object-position: left !important;
   }
   header {
-    padding: 150px 0px 50px;
+    padding: 200px 0px 50px;
+  }
+  header h1 {
+    font-size: 20px !important;
+  }
+  header h1 span {
+    margin: 0px !important;
   }
   .about-us {
     padding: 90px 0px 40px;
+  }
+  .about-us.about-revers {
+    padding-top: 0px !important;
   }
   .about-us::after {
     width: 150px;

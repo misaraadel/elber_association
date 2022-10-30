@@ -1,11 +1,24 @@
 @media (max-width: 999px) {
   .navbar {
-    padding: 20px 0px;
-    .top-nav {
-      display: none;
+    padding: 0px 0px;
+    .socail-data {
+      display: none !important;
     }
     .hamburger {
       display: block !important;
+    }
+
+    .data-icons {
+      width: 100%;
+      justify-content: center;
+
+      .custom-btn {
+        height: 35px !important;
+      }
+    }
+
+    .top-nav {
+      margin-bottom: 0px;
     }
 
     &.scrolled {
@@ -15,7 +28,7 @@
       }
 
       .navbar-nav {
-        top: 100px;
+        top: 80px;
         height: 100vh !important;
       }
     }
@@ -27,7 +40,7 @@
       padding: 20px 15px 120px 0px;
       background-color: #fff;
       z-index: 99;
-      top: 123px;
+      top: 170px;
       right: -100%;
       overflow-y: scroll;
       flex-direction: column !important;
@@ -62,11 +75,23 @@
   }
 
   header {
-    padding: 150px 0px 50px;
+    padding: 200px 0px 50px;
+
+    h1 {
+      font-size: 20px !important;
+
+      span {
+        margin: 0px !important;
+      }
+    }
   }
 
   .about-us {
     padding: 90px 0px 40px;
+
+    &.about-revers {
+      padding-top: 0px !important;
+    }
 
     &::after {
       width: 150px;
