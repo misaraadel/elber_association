@@ -2,14 +2,14 @@
 @import 'animations';
 
 :root {
-  --primary-color: #2C608C;
+  --primary-color: #5BBBBD;
   --secondary-color: #dfbe5d;
   --dark-color: #000;
   --light-color: #fff;
   --gray-color: #808080;
 
   --light-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg) brightness(103%) contrast(104%);
-  --primary-filter: invert(36%) sepia(5%) saturate(5991%) hue-rotate(166deg) brightness(93%) contrast(93%);
+  --primary-filter: invert(53%) sepia(55%) saturate(4739%) hue-rotate(163deg) brightness(97%) contrast(102%);
 }
 
 .custom-btn {
@@ -180,7 +180,7 @@
         top: -35px;
         font-weight: 400;
         left: 0;
-        color: #2C608C;
+        color: #5BBBBD;
       }
       .skillbar {
         position:relative;
@@ -262,7 +262,7 @@
         width: 100%;
         height: 100%;
         text-align: center;
-        border: 1px solid rgba($color: #2C608C, $alpha: 0.2);
+        border: 1px solid rgba($color: #5BBBBD, $alpha: 0.2);
         color: var(--dark-color);
         font-size: 15px;
         font-weight: 500;
@@ -298,15 +298,15 @@
 
 .navbar {
   width: 100%;
-  padding: 20px 0px;
+  padding: 0px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99999;
 
   &.scrolled {
     background-color: var(--light-color);
-    box-shadow: 0px 0px 10px rgba($color: #2C608C, $alpha: 0.2);
+    box-shadow: 0px 0px 10px rgba($color: #5BBBBD, $alpha: 0.2);
 
     .brand-name img {
       height: 80px !important;
@@ -319,10 +319,17 @@
 
   .top-nav {
     width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+    background-color: var(--light-color);
+
+    .contain {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+    }
 
     ul {
       display: flex;
@@ -335,22 +342,40 @@
         &:last-child {
           margin-inline-end: 0px;
         }
+      }
+    }
 
-        a {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          align-content: center;
-          justify-content: center;
-          background-color: var(--light-color);
-        }
+    .custom-btn {
+      background-color: var(--primary-color);
+      height: 40px;
+      width: 200px;
 
-        img {
-          width: 20px;
-          height: 20px;
-          object-fit: contain;
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+    }
+
+    .socail-data {
+      a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: var(--light-color);
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+
+        &.socail {
+          filter: var(--primary-filter);
         }
       }
     }
@@ -369,7 +394,7 @@
       .line{
         width: 30px;
         height: 3px;
-        background: linear-gradient(90deg, #2C608C, #dfbe5d);
+        background: linear-gradient(90deg, #5BBBBD, #dfbe5d);
         display: block;
         margin: 8px auto;
         transition: all 0.3s ease-in-out;
@@ -457,7 +482,7 @@
           }
 
           .drop-list {
-            width: 250px;
+            width: 300px;
             background-color: #fff;
             position: absolute;
             padding: 0px 20px;
@@ -477,7 +502,7 @@
 
               a {
                 width: 100%;
-                padding: 15px 0px;
+                padding: 10px 0px;
                 border-bottom: 1px solid rgba($color: #000, $alpha: 0.05);
                 color: var(--dark);
                 font-size: 15px;
@@ -501,7 +526,7 @@
                 }
 
                 &:hover {
-                  color: #2C608C;
+                  color: #5BBBBD;
 
                   &::after {
                     animation: translateX 1s linear infinite;
@@ -697,7 +722,7 @@ header {
       align-items: center;
       text-align: center;
       animation: translateY 2s linear infinite;
-      box-shadow: 0px 0px 10px rgba($color: #2C608C, $alpha: 0.2);
+      box-shadow: 0px 0px 10px rgba($color: #5BBBBD, $alpha: 0.2);
 
       img {
         width: 30px;
@@ -728,7 +753,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #dfbe5d, #2C608C);
+    background: linear-gradient(180deg, #dfbe5d, #5BBBBD);
     top: 0;
     left: 0;
     z-index: -1;
@@ -904,7 +929,7 @@ header {
     height: 100%;
     padding: 20px 10px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba($color: #2C608C, $alpha: 0.5);
+    box-shadow: 0px 0px 10px rgba($color: #5BBBBD, $alpha: 0.5);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -921,7 +946,7 @@ header {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #2C608C;
+      background-color: #5BBBBD;
       top: 0;
       left: 0;
       z-index: -1;
@@ -934,7 +959,7 @@ header {
       height: 100px;
       object-fit: contain;
       margin-bottom: 20px;
-      filter: invert(36%) sepia(5%) saturate(5991%) hue-rotate(166deg) brightness(93%) contrast(93%);
+      filter: invert(53%) sepia(55%) saturate(4739%) hue-rotate(163deg) brightness(97%) contrast(102%);
     }
 
     h2 {
@@ -1033,7 +1058,7 @@ header {
 
   a {
     width: 100%;
-    height: 300px;
+    height: 350px;
     display: flex;
     overflow: hidden;
     border-radius: 10px;
@@ -1042,6 +1067,7 @@ header {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       transition: all .3s linear
     }
 
@@ -1141,7 +1167,7 @@ header {
     width: 100%;
     padding: 80px 20px;
     background-color: var(--light-color);
-    box-shadow: 0px 0px 10px rgba($color: #2C608C, $alpha: 0.3);
+    box-shadow: 0px 0px 10px rgba($color: #5BBBBD, $alpha: 0.3);
     border-radius: 15px;
     position: relative;
     z-index: 9;
@@ -1212,7 +1238,7 @@ header {
           height: 100%;
           background-color: var(--light-color);
           border-radius: 50px;
-          border: 1px solid rgba($color: #2C608C, $alpha: 0.3);
+          border: 1px solid rgba($color: #5BBBBD, $alpha: 0.3);
           padding-inline-end: 150px;
           color: var(--dark-color);
           padding-inline-start: 10px;
@@ -1346,7 +1372,7 @@ header {
         top: -35px;
         font-weight: 400;
         left: 0;
-        color: #2C608C;
+        color: #5BBBBD;
       }
       .skillbar {
         position:relative;
@@ -1387,7 +1413,7 @@ header {
           width: 100%;
           height: 100%;
           text-align: center;
-          border: 1px solid rgba($color: #2C608C, $alpha: 0.2);
+          border: 1px solid rgba($color: #5BBBBD, $alpha: 0.2);
           color: var(--dark-color);
           font-size: 15px;
           font-weight: 500;
@@ -1542,7 +1568,7 @@ header {
     width: 100%;
     padding: 20px 10px;
     background-color: var(--light-color);
-    box-shadow: 0px 0px 10px rgba($color: #2C608C, $alpha: 0.2);
+    box-shadow: 0px 0px 10px rgba($color: #5BBBBD, $alpha: 0.2);
     border-radius: 10px;
 
     li {
@@ -1611,11 +1637,11 @@ header {
           align-items: center;
           align-content: center;
           justify-content: center;
-          background-color: rgba($color: #2C608C , $alpha: .10);
+          background-color: rgba($color: #5BBBBD , $alpha: .10);
           border-radius: 25px;
           font-size: 16px;
           font-weight: 900;
-          color: #2C608C;
+          color: #5BBBBD;
           line-height: 25px;
           border: 0px !important;
           position: relative;
@@ -1627,7 +1653,7 @@ header {
             position: absolute;
             width: 0%;
             height: 100%;
-            background-color: #2C608C;
+            background-color: #5BBBBD;
             top: 0;
             z-index: -1;
             transition: all .4s linear;
@@ -1703,7 +1729,7 @@ header {
     .payment-data{
       width: 100%;
       padding: 30px;
-      border: 1px solid rgba($color: #2C608C , $alpha: .15);
+      border: 1px solid rgba($color: #5BBBBD , $alpha: .15);
       border-radius: 10px;
       background-color: #fff;
       margin-bottom: 20px;
@@ -1774,7 +1800,7 @@ header {
     width: 100%;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba($color: #2C608C , $alpha: .10);
+    box-shadow: 0px 0px 20px rgba($color: #5BBBBD , $alpha: .10);
     background-color: #fff;
 
     .request-details{
@@ -1797,7 +1823,7 @@ header {
           }
 
           .data{
-            color: #2C608C;
+            color: #5BBBBD;
             font-size: 20px;
             font-weight: 900;
             line-height: 45px;
@@ -1866,7 +1892,7 @@ header {
       }
 
       &:focus , &:hover , &:visited{
-        border-color: #2C608C;
+        border-color: #5BBBBD;
       }
     }
 
@@ -1884,7 +1910,7 @@ header {
       cursor: pointer;
 
       i{
-        color: #2C608C;
+        color: #5BBBBD;
         font-size: 16px;
       }
     }
@@ -1952,7 +1978,7 @@ header {
       justify-content: center;
       align-items: center;
       align-content: center;
-      background-color: #2C608C;
+      background-color: #5BBBBD;
       cursor: pointer;
       border-radius: 50%;
 
@@ -2011,10 +2037,10 @@ header {
       }
 
       &:hover{
-        border-color: #2C608C;
+        border-color: #5BBBBD;
         
         .title{
-          color: #2C608C;
+          color: #5BBBBD;
         }
       }
     }
@@ -2026,7 +2052,7 @@ header {
       top: 0;
       left: 0;
       border-radius: 20px;
-      border: 1px solid #2C608C;
+      border: 1px solid #5BBBBD;
       overflow: hidden;
       display: none;
       z-index: 9;
@@ -2036,7 +2062,7 @@ header {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg , #2C608C , transparent);
+        background: linear-gradient(180deg , #5BBBBD , transparent);
         top: 0;
         left: 0;
         z-index: 1;
@@ -2076,7 +2102,7 @@ header {
       width: 25px;
       height: 25px;
       border-radius: 50%;
-      border: 1px solid #2C608C;
+      border: 1px solid #5BBBBD;
       background-color: #fff;
       cursor: pointer;
       position: relative;
@@ -2086,7 +2112,7 @@ header {
         content: '\f00c';
         width: 25px;
         height: 25px;
-        background-color: #2C608C;
+        background-color: #5BBBBD;
         border-radius: 50%;
         color: #fff;
         display: flex;
@@ -2136,14 +2162,14 @@ header {
     font-weight: 900;
     line-height: 25px;
     position: relative;
-    color: #2C608C;
+    color: #5BBBBD;
 
     &::after{
       content: '';
       position: absolute;
       width: 100%;
       height: 1px;
-      background-color: #2C608C;
+      background-color: #5BBBBD;
       bottom: 0;
       left: 0;
       transform: scaleX(0);
@@ -2239,7 +2265,7 @@ header {
       color: #ddd;
       
       &.active, &:hover {
-        color: #2C608C;
+        color: #5BBBBD;
       }
 
       &:last-child {
@@ -2258,7 +2284,7 @@ header {
   }
 
   .title{
-    color: #2C608C;
+    color: #5BBBBD;
     font-size: 20px;
     line-height: 25px;
     font-weight: 900;
@@ -2295,7 +2321,7 @@ header {
         top: 50%;
         transform: translateY(-50%);
         left: 12px;
-        color: #2C608C;
+        color: #5BBBBD;
         font-size: 16px;
         font-weight: 500;
         line-height: 25px;
@@ -2323,7 +2349,7 @@ header {
   .customer-data{
     width: 100%;
     padding: 20px 15px;
-    background-color: rgba($color: #2C608C, $alpha: .06);
+    background-color: rgba($color: #5BBBBD, $alpha: .06);
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -2395,10 +2421,10 @@ header {
       }
 
       &:hover{
-        box-shadow: 0px 0px 5px rgba($color: #2C608C, $alpha: .06);
+        box-shadow: 0px 0px 5px rgba($color: #5BBBBD, $alpha: .06);
 
         .customer-name{
-          color: #2C608C;
+          color: #5BBBBD;
         }
       }
   }
@@ -2443,7 +2469,7 @@ header {
     font-weight: 900;
     line-height: 25px;
     margin-top: 10px;
-    color: #2C608C;
+    color: #5BBBBD;
     text-align: center;
   }
 
@@ -2527,6 +2553,44 @@ header {
   }
 }
 
+.partner {
+  width: 100%;
+  padding: 50px 0px;
+  position: relative;
+  z-index: 9;
+
+  .owl-stage {
+    padding: 10px 0px;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: var(--light-color);
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.05);
+    transition: all .3s linear;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      opacity: .5;
+      transition: all .3s linear;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 footer {
   width: 100%;
   padding: 50px 0px 10px;
@@ -2543,7 +2607,7 @@ footer {
   }
 
   &::after {
-    background-color: rgba($color: #000, $alpha: 0.9);
+    background-color: rgba($color: #000, $alpha: 0.7);
     z-index: -1;
   }
 
@@ -2735,6 +2799,78 @@ footer {
       font-weight: 500;
       margin: 0px;
     }
+  }
+}
+
+.whatsapp {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 999;
+  background-color: #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: pulsecust 2s linear infinite;
+    border-radius: 50%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 9999;
+  }
+}
+
+.chat {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 65px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 999;
+  background-color: #fff;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: pulsecust 2s linear infinite;
+    border-radius: 50%;
+  }
+
+  img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    position: relative;
+    z-index: 9999;
   }
 }
 

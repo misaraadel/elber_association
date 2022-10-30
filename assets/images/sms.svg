@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
   <g id="vuesax_twotone_sms-tracking" data-name="vuesax/twotone/sms-tracking" transform="translate(-620 -252)">
     <g id="sms-tracking" transform="translate(620 252)">
-      <path id="Vector" d="M0,6.458C0,1.937,2.583,0,6.458,0H19.375c3.875,0,6.458,1.937,6.458,6.458V15.5c0,4.521-2.583,6.458-6.458,6.458H6.458" transform="translate(2.583 4.521)" fill="none" stroke="#2C608C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-      <path id="Vector-2" data-name="Vector" d="M12.917,0,8.874,3.229a4.089,4.089,0,0,1-4.844,0L0,0" transform="translate(9.042 11.625)" fill="none" stroke="#2C608C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
-      <path id="Vector-3" data-name="Vector" d="M0,0H7.75" transform="translate(2.583 21.313)" fill="none" stroke="#2C608C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
-      <path id="Vector-4" data-name="Vector" d="M0,0H3.875" transform="translate(2.583 16.146)" fill="none" stroke="#2C608C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+      <path id="Vector" d="M0,6.458C0,1.937,2.583,0,6.458,0H19.375c3.875,0,6.458,1.937,6.458,6.458V15.5c0,4.521-2.583,6.458-6.458,6.458H6.458" transform="translate(2.583 4.521)" fill="none" stroke="#5BBBBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-2" data-name="Vector" d="M12.917,0,8.874,3.229a4.089,4.089,0,0,1-4.844,0L0,0" transform="translate(9.042 11.625)" fill="none" stroke="#5BBBBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H7.75" transform="translate(2.583 21.313)" fill="none" stroke="#5BBBBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H3.875" transform="translate(2.583 16.146)" fill="none" stroke="#5BBBBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
       <path id="Vector-5" data-name="Vector" d="M0,0H31V31H0Z" fill="none" opacity="0"/>
     </g>
   </g>

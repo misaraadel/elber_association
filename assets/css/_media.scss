@@ -1,5 +1,9 @@
 @media (max-width: 999px) {
   .navbar {
+    padding: 20px 0px;
+    .top-nav {
+      display: none;
+    }
     .hamburger {
       display: block !important;
     }

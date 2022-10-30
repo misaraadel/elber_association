@@ -996,13 +996,13 @@ ul {
   }
 }
 :root {
-  --primary-color: #2C608C;
+  --primary-color: #5BBBBD;
   --secondary-color: #dfbe5d;
   --dark-color: #000;
   --light-color: #fff;
   --gray-color: #808080;
   --light-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg) brightness(103%) contrast(104%);
-  --primary-filter: invert(36%) sepia(5%) saturate(5991%) hue-rotate(166deg) brightness(93%) contrast(93%);
+  --primary-filter: invert(53%) sepia(55%) saturate(4739%) hue-rotate(163deg) brightness(97%) contrast(102%);
 }
 
 .custom-btn {
@@ -1158,7 +1158,7 @@ ul {
   top: -35px;
   font-weight: 400;
   left: 0;
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .project-box .image-content .raised-progress .skillbar {
   position: relative;
@@ -1235,7 +1235,7 @@ ul {
   width: 100%;
   height: 100%;
   text-align: center;
-  border: 1px solid rgba(44, 96, 140, 0.2);
+  border: 1px solid rgba(91, 187, 189, 0.2);
   color: var(--dark-color);
   font-size: 15px;
   font-weight: 500;
@@ -1275,15 +1275,15 @@ ul {
 
 .navbar {
   width: 100%;
-  padding: 20px 0px;
+  padding: 0px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99999;
 }
 .navbar.scrolled {
   background-color: var(--light-color);
-  box-shadow: 0px 0px 10px rgba(44, 96, 140, 0.2);
+  box-shadow: 0px 0px 10px rgba(91, 187, 189, 0.2);
 }
 .navbar.scrolled .brand-name img {
   height: 80px !important;
@@ -1292,6 +1292,12 @@ ul {
   display: none;
 }
 .navbar .top-nav {
+  width: 100%;
+  padding: 15px 0px;
+  margin-bottom: 10px;
+  background-color: var(--light-color);
+}
+.navbar .top-nav .contain {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1311,7 +1317,18 @@ ul {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
 }
-.navbar .top-nav ul li a {
+.navbar .top-nav .custom-btn {
+  background-color: var(--primary-color);
+  height: 40px;
+  width: 200px;
+}
+.navbar .top-nav .custom-btn img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.navbar .top-nav .socail-data a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1321,11 +1338,14 @@ ul {
   justify-content: center;
   background-color: var(--light-color);
 }
-.navbar .top-nav ul li img {
+.navbar .top-nav .socail-data img {
   width: 20px;
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.navbar .top-nav .socail-data img.socail {
+  filter: var(--primary-filter);
 }
 .navbar .content {
   width: 100%;
@@ -1340,7 +1360,7 @@ ul {
 .navbar .content .hamburger .line {
   width: 30px;
   height: 3px;
-  background: linear-gradient(90deg, #2C608C, #dfbe5d);
+  background: linear-gradient(90deg, #5BBBBD, #dfbe5d);
   display: block;
   margin: 8px auto;
   transition: all 0.3s ease-in-out;
@@ -1415,7 +1435,7 @@ ul {
   transition: all 0.3s linear;
 }
 .navbar .content .navbar-nav .nav-item.nav-drop .drop-list {
-  width: 250px;
+  width: 300px;
   background-color: #fff;
   position: absolute;
   padding: 0px 20px;
@@ -1435,7 +1455,7 @@ ul {
 }
 .navbar .content .navbar-nav .nav-item.nav-drop .drop-list li a {
   width: 100%;
-  padding: 15px 0px;
+  padding: 10px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   color: var(--dark);
   font-size: 15px;
@@ -1459,7 +1479,7 @@ ul {
   transition: all 0.3s linear;
 }
 .navbar .content .navbar-nav .nav-item.nav-drop .drop-list li a:hover {
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .navbar .content .navbar-nav .nav-item.nav-drop .drop-list li a:hover::after {
   -webkit-animation: translateX 1s linear infinite;
@@ -1632,7 +1652,7 @@ header .image-content .data {
   text-align: center;
   -webkit-animation: translateY 2s linear infinite;
           animation: translateY 2s linear infinite;
-  box-shadow: 0px 0px 10px rgba(44, 96, 140, 0.2);
+  box-shadow: 0px 0px 10px rgba(91, 187, 189, 0.2);
 }
 header .image-content .data img {
   width: 30px;
@@ -1660,7 +1680,7 @@ header .image-content .data p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #dfbe5d, #2C608C);
+  background: linear-gradient(180deg, #dfbe5d, #5BBBBD);
   top: 0;
   left: 0;
   z-index: -1;
@@ -1817,7 +1837,7 @@ header .image-content .data p {
   height: 100%;
   padding: 20px 10px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(44, 96, 140, 0.5);
+  box-shadow: 0px 0px 10px rgba(91, 187, 189, 0.5);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -1834,7 +1854,7 @@ header .image-content .data p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #2C608C;
+  background-color: #5BBBBD;
   top: 0;
   left: 0;
   z-index: -1;
@@ -1848,7 +1868,7 @@ header .image-content .data p {
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 20px;
-  filter: invert(36%) sepia(5%) saturate(5991%) hue-rotate(166deg) brightness(93%) contrast(93%);
+  filter: invert(53%) sepia(55%) saturate(4739%) hue-rotate(163deg) brightness(97%) contrast(102%);
 }
 .about-us .box h2 {
   font-size: 20px;
@@ -1931,7 +1951,7 @@ header .image-content .data p {
 }
 .banner a {
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: flex;
   overflow: hidden;
   border-radius: 10px;
@@ -1941,6 +1961,8 @@ header .image-content .data p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transition: all 0.3s linear;
 }
 .banner a:hover img {
@@ -2027,7 +2049,7 @@ header .image-content .data p {
   width: 100%;
   padding: 80px 20px;
   background-color: var(--light-color);
-  box-shadow: 0px 0px 10px rgba(44, 96, 140, 0.3);
+  box-shadow: 0px 0px 10px rgba(91, 187, 189, 0.3);
   border-radius: 15px;
   position: relative;
   z-index: 9;
@@ -2095,7 +2117,7 @@ header .image-content .data p {
   height: 100%;
   background-color: var(--light-color);
   border-radius: 50px;
-  border: 1px solid rgba(44, 96, 140, 0.3);
+  border: 1px solid rgba(91, 187, 189, 0.3);
   -webkit-padding-end: 150px;
           padding-inline-end: 150px;
   color: var(--dark-color);
@@ -2220,7 +2242,7 @@ header .image-content .data p {
   top: -35px;
   font-weight: 400;
   left: 0;
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .single-project .contain .raised-progress .skillbar {
   position: relative;
@@ -2260,7 +2282,7 @@ header .image-content .data p {
   width: 100%;
   height: 100%;
   text-align: center;
-  border: 1px solid rgba(44, 96, 140, 0.2);
+  border: 1px solid rgba(91, 187, 189, 0.2);
   color: var(--dark-color);
   font-size: 15px;
   font-weight: 500;
@@ -2406,7 +2428,7 @@ header .image-content .data p {
   width: 100%;
   padding: 20px 10px;
   background-color: var(--light-color);
-  box-shadow: 0px 0px 10px rgba(44, 96, 140, 0.2);
+  box-shadow: 0px 0px 10px rgba(91, 187, 189, 0.2);
   border-radius: 10px;
 }
 .cart .cart-details li {
@@ -2466,11 +2488,11 @@ header .image-content .data p {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: rgba(44, 96, 140, 0.1);
+  background-color: rgba(91, 187, 189, 0.1);
   border-radius: 25px;
   font-size: 16px;
   font-weight: 900;
-  color: #2C608C;
+  color: #5BBBBD;
   line-height: 25px;
   border: 0px !important;
   position: relative;
@@ -2482,7 +2504,7 @@ header .image-content .data p {
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: #2C608C;
+  background-color: #5BBBBD;
   top: 0;
   z-index: -1;
   transition: all 0.4s linear;
@@ -2542,7 +2564,7 @@ header .image-content .data p {
 .payment .payment-content .payment-data {
   width: 100%;
   padding: 30px;
-  border: 1px solid rgba(44, 96, 140, 0.15);
+  border: 1px solid rgba(91, 187, 189, 0.15);
   border-radius: 10px;
   background-color: #fff;
   margin-bottom: 20px;
@@ -2601,7 +2623,7 @@ header .image-content .data p {
   width: 100%;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(44, 96, 140, 0.1);
+  box-shadow: 0px 0px 20px rgba(91, 187, 189, 0.1);
   background-color: #fff;
 }
 .payment .ticket .request-details li {
@@ -2621,7 +2643,7 @@ header .image-content .data p {
   line-height: 45px;
 }
 .payment .ticket .request-details li .data {
-  color: #2C608C;
+  color: #5BBBBD;
   font-size: 20px;
   font-weight: 900;
   line-height: 45px;
@@ -2692,7 +2714,7 @@ header .image-content .data p {
   color: #9B9B9B;
 }
 .form-content .form-group .form-control:focus, .form-content .form-group .form-control:hover, .form-content .form-group .form-control:visited {
-  border-color: #2C608C;
+  border-color: #5BBBBD;
 }
 .form-content .form-group .passwordIcon {
   position: absolute;
@@ -2708,7 +2730,7 @@ header .image-content .data p {
   cursor: pointer;
 }
 .form-content .form-group .passwordIcon i {
-  color: #2C608C;
+  color: #5BBBBD;
   font-size: 16px;
 }
 .form-content .form-group.select-option .form-control {
@@ -2762,7 +2784,7 @@ header .image-content .data p {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #2C608C;
+  background-color: #5BBBBD;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -2815,10 +2837,10 @@ header .image-content .data p {
   display: none;
 }
 .form-content .payment-img-contain .form-label-shape:hover {
-  border-color: #2C608C;
+  border-color: #5BBBBD;
 }
 .form-content .payment-img-contain .form-label-shape:hover .title {
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .form-content .payment-img-contain .payment-img {
   width: 100%;
@@ -2827,7 +2849,7 @@ header .image-content .data p {
   top: 0;
   left: 0;
   border-radius: 20px;
-  border: 1px solid #2C608C;
+  border: 1px solid #5BBBBD;
   overflow: hidden;
   display: none;
   z-index: 9;
@@ -2837,7 +2859,7 @@ header .image-content .data p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #2C608C, transparent);
+  background: linear-gradient(180deg, #5BBBBD, transparent);
   top: 0;
   left: 0;
   z-index: 1;
@@ -2874,7 +2896,7 @@ header .image-content .data p {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 1px solid #2C608C;
+  border: 1px solid #5BBBBD;
   background-color: #fff;
   cursor: pointer;
   position: relative;
@@ -2884,7 +2906,7 @@ header .image-content .data p {
   content: "\f00c";
   width: 25px;
   height: 25px;
-  background-color: #2C608C;
+  background-color: #5BBBBD;
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -2929,14 +2951,14 @@ header .image-content .data p {
   font-weight: 900;
   line-height: 25px;
   position: relative;
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .form-content .title::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #2C608C;
+  background-color: #5BBBBD;
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -3017,7 +3039,7 @@ header .image-content .data p {
   color: #ddd;
 }
 .modal-body .stars li.active, .modal-body .stars li:hover {
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .modal-body .stars li:last-child {
   margin: 0px !important;
@@ -3031,7 +3053,7 @@ header .image-content .data p {
   margin: 10px 0px 30px 0px;
 }
 .modal-body .title {
-  color: #2C608C;
+  color: #5BBBBD;
   font-size: 20px;
   line-height: 25px;
   font-weight: 900;
@@ -3061,7 +3083,7 @@ header .image-content .data p {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
-  color: #2C608C;
+  color: #5BBBBD;
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
@@ -3085,7 +3107,7 @@ header .image-content .data p {
 .modal-body .customer-data {
   width: 100%;
   padding: 20px 15px;
-  background-color: rgba(44, 96, 140, 0.06);
+  background-color: rgba(91, 187, 189, 0.06);
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
@@ -3147,10 +3169,10 @@ header .image-content .data p {
           animation: tada 0.2s both;
 }
 .modal-body .customer-data:hover {
-  box-shadow: 0px 0px 5px rgba(44, 96, 140, 0.06);
+  box-shadow: 0px 0px 5px rgba(91, 187, 189, 0.06);
 }
 .modal-body .customer-data:hover .customer-name {
-  color: #2C608C;
+  color: #5BBBBD;
 }
 .modal-body .done {
   color: #000;
@@ -3186,7 +3208,7 @@ header .image-content .data p {
   font-weight: 900;
   line-height: 25px;
   margin-top: 10px;
-  color: #2C608C;
+  color: #5BBBBD;
   text-align: center;
 }
 .modal-body .flex-btn {
@@ -3256,6 +3278,41 @@ header .image-content .data p {
   margin-bottom: 20px;
 }
 
+.partner {
+  width: 100%;
+  padding: 50px 0px;
+  position: relative;
+  z-index: 9;
+}
+.partner .owl-stage {
+  padding: 10px 0px;
+}
+.partner .box {
+  width: 100%;
+  display: flex;
+  height: 100px;
+  background-color: var(--light-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s linear;
+  border-radius: 10px;
+}
+.partner .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.5;
+  transition: all 0.3s linear;
+}
+.partner .box:hover {
+  transform: translateY(-10px);
+}
+.partner .box:hover img {
+  opacity: 1;
+}
+
 footer {
   width: 100%;
   padding: 50px 0px 10px;
@@ -3271,7 +3328,7 @@ footer::after, footer::before {
   left: 0;
 }
 footer::after {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 footer::before {
@@ -3438,7 +3495,85 @@ footer .copyrights p {
   margin: 0px;
 }
 
+.whatsapp {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 999;
+  background-color: #fff;
+}
+.whatsapp::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: pulsecust 2s linear infinite;
+          animation: pulsecust 2s linear infinite;
+  border-radius: 50%;
+}
+.whatsapp img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  z-index: 9999;
+}
+
+.chat {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 65px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 999;
+  background-color: #fff;
+}
+.chat::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-animation: pulsecust 2s linear infinite;
+          animation: pulsecust 2s linear infinite;
+  border-radius: 50%;
+}
+.chat img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  z-index: 9999;
+}
+
 @media (max-width: 999px) {
+  .navbar {
+    padding: 20px 0px;
+  }
+  .navbar .top-nav {
+    display: none;
+  }
   .navbar .hamburger {
     display: block !important;
   }
