@@ -959,7 +959,7 @@ header {
       height: 100px;
       object-fit: contain;
       margin-bottom: 20px;
-      filter: invert(53%) sepia(55%) saturate(4739%) hue-rotate(163deg) brightness(97%) contrast(102%);
+      filter: invert(70%) sepia(30%) saturate(593%) hue-rotate(132deg) brightness(91%) contrast(87%);
     }
 
     h2 {
@@ -1009,7 +1009,83 @@ header {
 .projects {
   width: 100%;
   padding: 50px 0px;
-  background-color: var(--light-color);
+
+  &.primary-project {
+    background-color: var(--primary-color);
+
+    .heading {
+      p {
+        color: var(--light-color);
+
+        &::after {
+          background-color: var(--light-color);
+        }
+      }
+
+
+      h1 {
+        color: var(--light-color);
+      }
+    }
+
+    .custom-btn {
+      width: 160px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      border-radius: 50px;
+      position: relative;
+      overflow: hidden;
+    
+      &::after, &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+        transition: all .3s linear;
+      }
+    
+      &::after {
+        left: 0;
+        width: 0%;
+        background-color: var(--primary-color);
+      }
+    
+      &::before {
+        right: 0;
+        width: 100%;
+        background-color: var(--secondary-color);
+      }
+    
+      img {
+        width: 24px !important;
+        height: 24px !important;
+        display: inline-block !important;
+        object-fit: contain;
+        margin-inline-end: 10px;
+        filter: var(--light-filter);
+      }
+    
+      span {
+        color: var(--light-color);
+        font-size: 18px;
+        font-weight: 700;
+      }
+    
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+    
+        &::before {
+          width: 0px;
+        }
+      }
+    }
+  }
 
   &.secondary-section {
     background-color: rgba($color: #D9E7DB, $alpha: 0.06) !important; 
@@ -2558,6 +2634,31 @@ header {
   padding: 50px 0px;
   position: relative;
   z-index: 9;
+
+  &.primary-project {
+    background-color: var(--primary-color);
+
+    .heading {
+      p {
+        color: var(--light-color);
+
+        &::after {
+          background-color: var(--light-color);
+        }
+      }
+
+
+      h1 {
+        color: var(--light-color);
+      }
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span ,
+    .owl-theme .owl-dots .owl-dot span {
+      background-color: var(--light-color);
+    }
+  }
 
   .owl-stage {
     padding: 10px 0px;

@@ -1868,7 +1868,7 @@ header .image-content .data p {
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 20px;
-  filter: invert(53%) sepia(55%) saturate(4739%) hue-rotate(163deg) brightness(97%) contrast(102%);
+  filter: invert(70%) sepia(30%) saturate(593%) hue-rotate(132deg) brightness(91%) contrast(87%);
 }
 .about-us .box h2 {
   font-size: 20px;
@@ -1910,7 +1910,68 @@ header .image-content .data p {
 .projects {
   width: 100%;
   padding: 50px 0px;
+}
+.projects.primary-project {
+  background-color: var(--primary-color);
+}
+.projects.primary-project .heading p {
+  color: var(--light-color);
+}
+.projects.primary-project .heading p::after {
   background-color: var(--light-color);
+}
+.projects.primary-project .heading h1 {
+  color: var(--light-color);
+}
+.projects.primary-project .custom-btn {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.projects.primary-project .custom-btn::after, .projects.primary-project .custom-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+.projects.primary-project .custom-btn::after {
+  left: 0;
+  width: 0%;
+  background-color: var(--primary-color);
+}
+.projects.primary-project .custom-btn::before {
+  right: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+.projects.primary-project .custom-btn img {
+  width: 24px !important;
+  height: 24px !important;
+  display: inline-block !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  filter: var(--light-filter);
+}
+.projects.primary-project .custom-btn span {
+  color: var(--light-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+.projects.primary-project .custom-btn:hover::after {
+  width: 100%;
+}
+.projects.primary-project .custom-btn:hover::before {
+  width: 0px;
 }
 .projects.secondary-section {
   background-color: rgba(217, 231, 219, 0.06) !important;
@@ -3283,6 +3344,23 @@ header .image-content .data p {
   padding: 50px 0px;
   position: relative;
   z-index: 9;
+}
+.partner.primary-project {
+  background-color: var(--primary-color);
+}
+.partner.primary-project .heading p {
+  color: var(--light-color);
+}
+.partner.primary-project .heading p::after {
+  background-color: var(--light-color);
+}
+.partner.primary-project .heading h1 {
+  color: var(--light-color);
+}
+.partner.primary-project .owl-theme .owl-dots .owl-dot.active span,
+.partner.primary-project .owl-theme .owl-dots .owl-dot:hover span,
+.partner.primary-project .owl-theme .owl-dots .owl-dot span {
+  background-color: var(--light-color);
 }
 .partner .owl-stage {
   padding: 10px 0px;
