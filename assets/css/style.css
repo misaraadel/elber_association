@@ -1348,7 +1348,7 @@ ul {
      object-fit: contain;
 }
 .navbar .top-nav .socail-data img.socail {
-  filter: var(--primary-filter);
+  filter: invert(70%) sepia(30%) saturate(593%) hue-rotate(132deg) brightness(91%) contrast(87%);
 }
 .navbar .content {
   padding: 10px 0px;
@@ -1759,6 +1759,7 @@ header .image-content .data p {
 .about-us.about-revers {
   background: var(--light-color);
   background-image: none;
+  padding-top: 0px !important;
 }
 .about-us.about-revers::after {
   width: 100%;
@@ -1788,7 +1789,7 @@ header .image-content .data p {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   position: relative;
   z-index: 99;
 }

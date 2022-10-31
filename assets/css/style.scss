@@ -379,7 +379,7 @@
         object-fit: contain;
 
         &.socail {
-          filter: var(--primary-filter);
+          filter: invert(70%) sepia(30%) saturate(593%) hue-rotate(132deg) brightness(91%) contrast(87%);
         }
       }
     }
@@ -843,6 +843,7 @@ header {
   &.about-revers {
     background: var(--light-color);
     background-image: none;
+    padding-top: 0px !important;
 
     &::after {
       width: 100%;
@@ -875,7 +876,7 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:  center;
     position: relative;
     z-index: 99;
 
