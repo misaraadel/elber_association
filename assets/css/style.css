@@ -1675,27 +1675,28 @@ header .image-content .data p {
 .sub-header {
   width: 100%;
   padding: 200px 0px 80px;
-  background: url("../images/banner-shape.png") center/cover no-repeat;
   position: relative;
   z-index: 9;
+  background-color: #F8F4F3;
 }
 .sub-header::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, #dfbe5d, #5BBBBD);
+  width: 45%;
+  height: 110%;
+  background: url("../images/pattern.jpg") center/cover no-repeat;
+  opacity: 0.3;
   top: 0;
   left: 0;
+  border-bottom-right-radius: 40px;
   z-index: -1;
-  opacity: 0.6;
 }
 .sub-header .contain {
   width: 100%;
   text-align: center;
 }
 .sub-header .contain h1 {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 30px;
   font-weight: 900;
   margin-bottom: 20px;
@@ -1717,6 +1718,8 @@ header .image-content .data p {
   height: 20px;
   background: url("../images/arrow.svg") center/contain no-repeat;
   top: calc(50% - 10px);
+  background-color: var(--dark-color);
+  border-radius: 50%;
   left: -10px;
 }
 .sub-header .contain .breadcrumb-contain li:first-child {
@@ -1731,7 +1734,7 @@ header .image-content .data p {
   display: none;
 }
 .sub-header .contain .breadcrumb-contain li a, .sub-header .contain .breadcrumb-contain li span {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 15px;
   font-weight: 500;
 }
